@@ -29,14 +29,12 @@
         <div class="executive-summary" itemprop="description">
           <p>With recent certifications in Linux System Administration and practical experience through Computerbank and St. Paul's Anglican Kindergarten, I am actively seeking a system administration role.</p>
         </div>
-
-        {% if site.resume_looking_for_work == 'yes' %}
+<!--        {% if site.resume_looking_for_work == 'yes' %}
         <a href="mailto:{{ site.resume_contact_email }}" class="contact-button" itemprop="email">Contact me</a>
         {% elsif site.resume_looking_for_work == 'no' %}
         <a class="contact-button not-looking">I'm not looking for work right now.</a>
         {% else %}
-        {% endif %}
-
+        {% endif %} -->
       </header>
 
       {% if site.resume_section_experience %}
@@ -89,17 +87,13 @@
           <h2>Education &amp; Certifications</h2>
         </header>
 
-
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">LPIC-1: Linux Server Professional &bull; 2016</h3>
-        </div>
-
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">CompTIA Linux+ &bull; 2016</h3>
-        </div>
-
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/CollegeOrUniversity">
-          <h3 class="resume-item-title" itemprop="name">SUSE Certified Linux Administrator (SUSE CLA) &bull; 2016</h3>
+          <h3 class="resume-item-title" itemprop="name">Certifications</h3>
+        <ul class="resume-item-list">
+          <li><h4 class="resume-item-details" itemprop="description">LPIC-1: Linux Server Professional &bull; 2016</h4></li>
+          <li><h4 class="resume-item-details" itemprop="description">CompTIA Linux+ &bull; 2016</h4></li>
+          <li><h4 class="resume-item-details" itemprop="description">SUSE Certified Linux Administrator (SUSE CLA) &bull; 2016</h4></li>
+        </ul>
         </div>
 
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/CollegeOrUniversity">
@@ -126,37 +120,54 @@
         </header>
 
         <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://home.kindergarten.vic.gov.au/stpauls/">Computerbank Remote Networks</a></h3>
-          <h4 class="resume-item-details">Primary Developer &bull; 2016 &mdash; Present</h4>
-          <p class="resume-item-copy">Prototyped Wordpress site with LAMP stack, Amazon EC3, and Amazon Linux</p>
-          <p class="resume-item-copy">Created a new Wordpress site, collaborated with graphic designer, and rebel.com.</p>
-          <p class="resume-item-copy">Migrated static HTML website to Amazon S3, Route 53 for DNS.</p>
-        </div>
+          <h3 class="resume-item-title">ABC Production - Seven Types of Ambiguity</h3>
+          <h4 class="resume-item-details">Computer Wrangler &bull; 2016</h4>
+          <p class="resume-item-copy">Prepared 20 computers used as props on the set of <a href="http://tv.press.abc.net.au/seven-stars-appear-in-gripping-new-drama-series-seven-types-of-ambiguity">Seven Types of Ambiguity</a>.</p>
+          <ul class="resume-item-list">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+       </div>
 
 
         <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://playonlinux.com">PlayOnLinux</a></h3>
+          <h3 class="resume-item-title">Computerbank Remote Networks</h3>
+          <h4 class="resume-item-details">Primary Developer &bull; 2016 &mdash; Present</h4>
+          <p class="resume-item-copy"></p>
+       </div>
+
+       <div class="resume-item">
+          <h3 class="resume-item-title">St. Paul's Anglican Kindergarten Website</a></h3>
+          <h4 class="resume-item-details">Primary Developer &bull; 2016 &mdash; Present</h4>
+          <ul class="resume-item-list">
+            <li>Edited HTML of original static site. <a href="http://stpaulskindergarten.org.au">stpaulskindergarten.org.au</a></li>
+            <li>Migrated static HTML website to Amazon S3, Route 53 for DNS.</li>
+            <li>Prototyped Wordpress site with LAMP stack, Amazon EC3, and Amazon Linux</li>
+            <li><a href="http://home.kindergarten.vic.gov.au/stpauls/">http://home.kindergarten.vic.gov.au/stpauls/</a> Created a new Wordpress site, collaborated with graphic designer, and rebel.com</li>
+          </ul>
+        </div>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">PlayOnLinux</h3>
           <h4 class="resume-item-details">Scripter &amp; Tester &bull; Nov, 2015</h4>
-          <p class="resume-item-copy">PlayOnLinux is a software package that allows for the easy instalment of games and applications designed to run on Microsoft Windows.</p>
-          <li>Submitted approved patches for a function installing Steam that eliminated showstopper errors and provided more information to guide the user. This required parsing the error logs and researching bugs to determine what created errors or hangs in installation. https://www.playonlinux.com/en/app-764-POL_Install_steam.html</li>
-          <li>BASH: Submitted approved patches for an installation script written in Bash to address bugs in Wine and Steam and allow a smooth installation on Linux systems. https://www.playonlinux.com/en/app-402-Fallout_3.html</li>
-          <li>Community Support: Assisted other users encountering issues with installation scripts, helping them achieve success with the software installation. </li>
+          <p class="resume-item-copy"><a href="http://playonlinux.com">PlayOnLinux</a> is a software package that allows for the easy instalment of games and applications designed to run on Microsoft Windows.</p>
+          <ul class="resume-item-list">
+            <li>Submitted approved patches for a function installing Steam that eliminated showstopper errors and provided more information to guide the user. This required parsing the error logs and researching bugs to determine what created errors or hangs in installation. https://www.playonlinux.com/en/app-764-POL_Install_steam.html</li>
+            <li>BASH: Submitted approved patches for an installation script written in Bash to address bugs in Wine and Steam and allow a smooth installation on Linux systems. https://www.playonlinux.com/en/app-402-Fallout_3.html</li>
+            <li>Community Support: Assisted other users encountering issues with installation scripts, helping them achieve success with the software installation. </li>
+          </ul>
         </div>
 
         <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://home.kindergarten.vic.gov.au/stpauls/">St. Paul's Anglican Kindergarten Website</a></h3>
-          <h4 class="resume-item-details">Primary Developer &bull; 2016 &mdash; Present</h4>
-          <p class="resume-item-copy">Prototyped Wordpress site with LAMP stack, Amazon EC3, and Amazon Linux</p>
-          <p class="resume-item-copy">Created a new Wordpress site, collaborated with graphic designer, and rebel.com.</p>
-          <p class="resume-item-copy">Migrated static HTML website to Amazon S3, Route 53 for DNS.</p>
-        </div>
-
-        <div class="resume-item">
-          <h3 class="resume-item-title"><a href="http://jasonhargenrader.com">Other Websites</a></h3>
+          <h3 class="resume-item-title">Other Websites</h3>
           <h4 class="resume-item-details">Developer &bull; 2016 &mdash; Present</h4>
-          <p class="resume-item-copy">Created this website forking from another GitHub repository. Using Jekyll. Hosted on Git Pages.</p>
-          <p class="resume-item-copy">jrhargenrader.com using Wordpress and Gandi.net for domain.</p>
-          <p class="resume-item-copy">https://melbournewriters.wordpress.com/ using Wordpress.</p>
+          <ul class="resume-item-list">
+            <li><a href="http://jasonhargenrader.com">jasonhargenrader.com</a> Forked from another GitHub repository. Using Jekyll. Hosted on Git Pages. Google Domains.</li>
+            <li><a href="http://jrhargenrader.com">jrhargenrader.com</a> using Wordpress and Gandi.net for domain.</li>
+            <li><a href="https://melbournewriters.wordpress.com">melbournewriters.wordpress.com</a> using Wordpress.</li>
+          </ul>
         </div>
 
       </section>
