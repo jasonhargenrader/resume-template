@@ -18,13 +18,13 @@
 
 // page header styles
 
-.page-header { padding: 1.5rem 0;
+.page-header { padding: 0rem 0;
 
   .avatar {
     width: 95px;
     max-width: 100%;
     overflow: hidden;
-    @include border-radius(100px);
+    @include border-radius(10px);
     margin: 0 auto;
     display: block;
   }
@@ -36,7 +36,15 @@
     text-align: center;
     letter-spacing: -.15rem;
     line-height: 1;
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 1rem;
+  }
+
+  .contact-details {
+    @include sans;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1;
+    margin: 1rem 0 1rem;
   }
 
   .title-bar {
@@ -114,13 +122,13 @@
     color: #fff;
   }
 
-  &.not-looking { width: 400px; }
+  &.not-looking { width: 600px; }
 }
 
 // resume content styles
 
 .content-section {
-  margin: 0 0 3rem;
+  margin: 0 0 1rem;
 
   .resume-item { margin-bottom: 2rem; }
 

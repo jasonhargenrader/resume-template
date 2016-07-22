@@ -16,6 +16,7 @@
 
         <!-- Your name is defined in the _config.yml file -->
         <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
+        <div class="contact-details">(512) 775-1446 | Columbia, SC | jason@jasonhargenrader.com</div>
 
         <div class="title-bar">
 
@@ -45,18 +46,6 @@
           <h2>IT Experience</h2>
         </header>
 
-        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
-        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
-          <h3 class="resume-item-title" itemprop="name">St. Paul's Anglican Kindergarten</h3>
-          <h4 class="resume-item-details" itemprop="description">System Administrator &bull; Nov, 2015 &mdash; Present</h4>
-          <p class="resume-item-copy">Serve as the IT officer for the committee handling all aspects of the kinder's IT requirements.</p>
-          <ul class="resume-item-list">
-            <li><strong>Windows System Administration:</strong> Windows Vista, 7, 10, anti-virus, anti-malware, backups, updates, automation
-            <li><strong>Network Administration:</strong> DNS, wireless configuration and security, remote access
-            <li><strong>Web Administration:</strong> Wordpress, HTML, CSS, Amazon S3, Amazon Route 53, FTP, domain management email</li>
-            <li><strong>Documentation:</strong> Network topology, IP address allocations, server report, firewall policy, remote access</li>
-          </ul>
-        </div><!-- end of resume-item -->
 
         <!-- another resume item -->
         <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
@@ -66,13 +55,27 @@
         </p>
           <ul class="resume-item-list">
             <li><strong>Linux System Administration:</strong> Ubuntu Mate 14.04, software compiling, patching, imaging, command line </li>
-            <li><strong>Hardware:</strong> Installing, repairing and troubleshooting computer hardware and peripherals</li>
+            <li><strong>Hardware:</strong> Desktop, laptop, tablet, and mobile device troubleshooting</li>
             <li><strong>Network Administration:</strong> DNS, wireless configuration and security, gateway server</li>
             <li><strong>Scripting:</strong> Bash</li>
             <li><strong>Security:</strong> DBAN</li>
             <li><strong>Documentation:</strong> laptop build guide, remote network topolgies
             <li><strong>Customer Support:</strong> Assisted customers technical questions in-person and over the phone</li>
          </ul>
+        </div><!-- end of resume-item -->
+
+        <!-- Duplicate these resume-item elements and edit accordingly for each job you want to add here -->
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">St. Paul's Anglican Kindergarten</h3>
+          <h4 class="resume-item-details" itemprop="description">System Administrator &bull; Nov, 2015 &mdash; Present</h4>
+          <p class="resume-item-copy">Serve as the IT officer for the committee handling all aspects of the kinder's IT requirements.</p>
+          <ul class="resume-item-list">
+            <li><strong>Windows System Administration:</strong> Windows Vista, 7, 10, PowerShell, anti-virus, anti-malware, backups, updates, automation
+            <li><strong>Hardware:</strong> Desktop, laptop, tablet, and mobile device troubleshooting</li>
+            <li><strong>Network Administration:</strong> DNS, wireless configuration and security, remote access
+            <li><strong>Web Administration:</strong> Wordpress, HTML, CSS, Amazon S3, Amazon Route 53, FTP, domain management, email</li>
+                        <li><strong>Documentation:</strong> Network topology, IP address allocations, server report, firewall policy, remote access</li>
+          </ul>
         </div><!-- end of resume-item -->
 
       </section>
@@ -152,11 +155,11 @@
         <div class="resume-item">
           <h3 class="resume-item-title">PlayOnLinux</h3>
           <h4 class="resume-item-details">Scripter &amp; Tester &bull; Nov, 2015</h4>
-          <p class="resume-item-copy"><a href="http://playonlinux.com">PlayOnLinux</a> is a software package that allows for the easy instalment of games and applications designed to run on Microsoft Windows.</p>
+          <p class="resume-item-copy"><a href="http://playonlinux.com">PlayOnLinux</a> is a software package that allows for the easy installation of games and applications designed to run on Microsoft Windows.</p>
           <ul class="resume-item-list">
-            <li>Submitted approved patches for a function installing Steam that eliminated showstopper errors and provided more information to guide the user. This required parsing the error logs and researching bugs to determine what created errors or hangs in installation. https://www.playonlinux.com/en/app-764-POL_Install_steam.html</li>
-            <li>BASH: Submitted approved patches for an installation script written in Bash to address bugs in Wine and Steam and allow a smooth installation on Linux systems. https://www.playonlinux.com/en/app-402-Fallout_3.html</li>
-            <li>Community Support: Assisted other users encountering issues with installation scripts, helping them achieve success with the software installation. </li>
+            <li><strong>BASH:</strong> Patched a <a href=" https://www.playonlinux.com/en/app-764-POL_Install_steam.html">function</a> installing Steam that eliminated showstopper errors and provided more information to guide the user. This required parsing the error logs and researching bugs to determine what created errors or hangs in installation.</li>
+            <li><strong>BASH:</strong> Patched an installation <a href="https://www.playonlinux.com/en/app-402-Fallout_3.html">script</a> written in Bash to address bugs in Wine and Steam and allow a smooth installation on Linux systems.</li>
+            <li><strong>Community Support:</strong> Assisted other users encountering issues with installation scripts, helping them achieve success with the software installation. </li>
           </ul>
         </div>
 
@@ -262,7 +265,7 @@
       <!-- end Associations -->
       {% endif %}
 
-      {% if site.resume_section_links %}
+     {% if site.resume_section_links %}
       <!-- begin Links -->
       <section class="content-section">
 
@@ -282,7 +285,7 @@
       {% endif %}
 
       <footer class="page-footer">
-        <p class="footer-line">Made by <a href="http://twitter.com/jglovier">@jglovier</a>. Fork me on <a href="https://github.com/jglovier/resume-template">GitHub</a>.</p>
+        <p class="footer-line">Hosted on <a href="https://pages.github.com/">GitHub Pages</a>. Developed with <a href="https://jekyllrb.com/">Jekyll</a>. Edited with <a href="https://atom.io/">Atom</a>.</p>
 
       </footer>
 
